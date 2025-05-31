@@ -1,0 +1,2753 @@
+<?xml version="1.0"?>
+<robot name="keyboard">
+    <!-- Keyboard Base -->
+    <link name="keyboard_base">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <!-- A flat box as the keyboard body -->
+                <box size="0.360466 0.144 0.0189"/>
+            </geometry>
+            <material name="gray">
+                <color rgba="0.7 0.7 0.7 1"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.360466 0.144 0.0189"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.8"/>
+            <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+        </inertial>
+    </link>
+
+    <link name="key_esc">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.018 0.018 0.012"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.018 0.018 0.012"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.001"/>
+            <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+        </inertial>
+    </link>
+    <link name="key_f1">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.018 0.018 0.012"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.018 0.018 0.012"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.001"/>
+            <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+        </inertial>
+    </link>
+	<link name="key_f2">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.018 0.018 0.012"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.018 0.018 0.012"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.001"/>
+            <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+        </inertial>
+    </link>
+	<link name="key_f3">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<link name="key_f4">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.018 0.018 0.012"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.018 0.018 0.012"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.001"/>
+            <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+        </inertial>
+    </link>
+	<link name="key_f5">
+   			<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<link name="key_f6">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<link name="key_f7">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<link name="key_f8">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<link name="key_f9">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<link name="key_f10">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<link name="key_f11">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<link name="key_f12">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<link name="key_t1">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<link name="key_t2">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<link name="key_t3">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+
+
+	<joint name="esc_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_esc"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.16363 0.050346 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<joint name="f1_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_f1"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.12543 0.050346 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+
+	</joint>
+	<joint name="f2_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_f2"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.106351 0.050346 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+
+	</joint>
+	<joint name="f3_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_f3"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.087276 0.050346 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<joint name="f4_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_f4"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.0682 0.050346 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<joint name="f5_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_f5"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.040002 0.050346 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+
+	</joint>
+	<joint name="f6_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_f6"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.020926 0.050346 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+
+	</joint>
+	<joint name="f7_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_f7"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.00185 0.050346 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+
+	</joint>
+	<joint name="f8_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_f8"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.017225 0.050346 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+
+	</joint>
+		<joint name="f9_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_f9"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.04636 0.050346 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+
+	</joint>
+	<joint name="f10_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_f10"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.065436 0.050346 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+
+	</joint>
+	<joint name="f11_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_f11"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.084512 0.050346 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+
+	</joint>
+	<joint name="f12_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_f12"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.103588 0.050346 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+
+	</joint>
+	<joint name="t1_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_t1"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.126534 0.050346 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<joint name="t2_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_t2"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.14572 0.050346 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+
+	<joint name="t3_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_t3"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.164907 0.050346 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+    <gazebo reference="esc_joint" >
+        <springReference>0</springReference>
+        <springStiffness>60</springStiffness>
+  	</gazebo>
+
+    <gazebo reference="esc_joint" >
+        <springReference>0</springReference>
+        <springStiffness>60</springStiffness>
+  	</gazebo>
+    <gazebo reference="f1_joint" >
+        <springReference>0</springReference>
+        <springStiffness>60</springStiffness>
+  	</gazebo>
+  		<gazebo reference="f2_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<gazebo reference="f3_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<gazebo reference="f4_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<gazebo reference="f5_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<gazebo reference="f6_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<gazebo reference="f7_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<gazebo reference="f8_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<gazebo reference="f9_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<gazebo reference="f10_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<gazebo reference="f11_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<gazebo reference="f12_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<gazebo reference="t1_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<gazebo reference="t2_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<gazebo reference="t3_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	
+	<link name="key_tilde">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="tilde_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_tilde"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.163625 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="tilde_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_1">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="1_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_1"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.14456 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="1_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_2">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="2_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_2"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.125494 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="2_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_3">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="3_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_3"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.106428 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="3_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_4">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="4_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_4"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.087363 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="4_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_5">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="5_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_5"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.068297 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="5_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_6">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="6_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_6"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.049231 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="6_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_7">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="7_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_7"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.030166 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="7_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_8">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="8_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_8"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.0111 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="8_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_9">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="9_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_9"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.007966 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="9_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_0">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="0_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_0"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.027032 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="0_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.046097 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_plus">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="plus_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_plus"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.065163 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="plus_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_backspace">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.038202 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.038202 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="backspace_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_backspace"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.093807 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="backspace_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_m1">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="m1_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_m1"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.12648 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="m1_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_m2">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="m2_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_m2"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.145546 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="m2_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_m3">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="m3_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_m3"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.164612 0.025455 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="m3_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+
+	<link name="key_tab">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.026874 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.026874 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="tab_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_tab"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.15915 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="tab_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_q">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="q_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_q"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.135757 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="q_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_w">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="w_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_w"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.116522 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="w_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_e">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="e_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_e"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.097287 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="e_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_r">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="r_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_r"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.078053 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="r_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_t">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="t_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_t"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.058818 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="t_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_y">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="y_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_y"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.039583 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="y_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_u">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="u_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_u"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.020349 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="u_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_i">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="i_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_i"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.001114 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="i_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_o">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="o_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_o"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.01812 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="o_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_p">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="p_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_p"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.037355 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="p_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_open_square">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="open_square_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_open_square"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.05659 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="open_square_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_close_square">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="close_square_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_close_square"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.075824 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="close_square_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_backslash">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.026874 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.026874 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="backslash_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_backslash"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.099127 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="backslash_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_b1">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="b1_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_b1"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.126565 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="b1_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_b2">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="b2_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_b2"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.145699 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="b2_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_b3">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="b3_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_b3"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.164833 0.006528 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="b3_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_caps">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.031374 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.031374 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="caps_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_caps"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.156984 -0.012435 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="caps_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_a">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="a_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_a"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.131247 -0.012435 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="a_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_s">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="s_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_s"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.111911 -0.012435 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="s_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_d">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="d_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_d"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.092576 -0.012435 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="d_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_f">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="f_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_f"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.073241 -0.012435 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="f_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_g">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="g_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_g"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.053905 -0.012435 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="g_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_h">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="h_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_h"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.03457 -0.012435 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="h_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_j">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="j_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_j"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.015235 -0.012435 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="j_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_k">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="k_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_k"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.004101 -0.012435 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="k_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_l">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="l_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_l"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.023436 -0.012435 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="l_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_semi_colon">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="semi_colon_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_semi_colon"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.042771 -0.012435 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="semi_colon_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_quote">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="quote_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_quote"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.062107 -0.012435 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="quote_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_enter">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.040374 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.040374 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="enter_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_enter"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.092399 -0.012435 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="enter_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+
+	<link name="key_l_shift">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.040437 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.040437 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="l_shift_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_l_shift"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.15242 -0.031406 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="l_shift_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_z">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="z_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_z"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.1224 -0.031406 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="z_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_x">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="x_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_x"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.102901 -0.031406 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="x_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_c">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="c_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_c"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.083401 -0.031406 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="c_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_v">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="v_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_v"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.063901 -0.031406 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="v_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_b">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="b_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_b"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.044401 -0.031406 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="b_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_n">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="n_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_n"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.024901 -0.031406 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="n_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_m">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="m_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_m"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.005401 -0.031406 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="m_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_comma">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="comma_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_comma"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.0141 -0.031406 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="comma_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_period">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="period_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_period"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.033599 -0.031406 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="period_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_forward_slash">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="forward_slash_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_forward_slash"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.053099 -0.031406 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="forward_slash_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_r_shift">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.049437 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.049437 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="r_shift_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_r_shift"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.087932 -0.031406 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="r_shift_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_up">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="up_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_up"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.145684 -0.0315 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="up_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	
+
+	<link name="key_l_ctrl">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.022437 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.022437 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="l_ctrl_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_l_ctrl"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.161389 -0.050543 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="l_ctrl_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_win">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.022437 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.022437 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="win_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_win"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.137889 -0.050543 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="win_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_l_alt">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.022437 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.022437 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="l_alt_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_l_alt"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.114389 -0.050543 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="l_alt_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_space">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.11986 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.11986 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="space_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_space"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" -0.042187 -0.050543 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="space_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_r_alt">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.022437 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.022437 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="r_alt_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_r_alt"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.03009 -0.050543 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="r_alt_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_r_win">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.022437 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.022437 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="r_win_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_r_win"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.05359 -0.050543 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="r_win_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_fn">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.022437 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.022437 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="fn_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_fn"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.07709 -0.050543 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="fn_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_r_ctrl">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.022437 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.022437 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="r_ctrl_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_r_ctrl"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.10059 -0.050543 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="r_ctrl_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_left">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="left_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_left"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.126524 -0.050543 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="left_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_down">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="down_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_down"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.145524 -0.050543 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="down_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	<link name="key_right">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.018 0.018 0.012"/>
+			</geometry>
+		</collision>
+		<inertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="0.001"/>
+			<inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+		</inertial>
+	</link>
+	<joint name="right_joint" type="prismatic">
+		<parent link="keyboard_base"/>
+		<child link="key_right"/>
+		<axis xyz="0 0 1"/>
+		<origin xyz=" 0.164524 -0.050543 0.018" rpy="0 0 0"/>
+		<limit lower="-0.004" upper="0" effort="1" velocity="0.001"/>
+		<dynamics damping="1" friction="0"/>
+	</joint>
+	<gazebo reference="right_joint" >
+		<springReference>0</springReference>
+		<springStiffness>60</springStiffness>
+	</gazebo>
+	
+	
+	
+	
+
+</robot>

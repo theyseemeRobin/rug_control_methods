@@ -1,0 +1,13 @@
+<library path="lib/librug_panda_controllers">
+    <class name="rug_panda_controllers/ExampleJointspaceController" type="rug_panda_controllers::ExampleJointspaceController" base_class_type="controller_interface::ControllerBase">
+        <description>
+            An example controller that takes joint position commands.
+        </description>
+    </class>
+
+    <class name="rug_panda_controllers/ExampleWorkspaceController" type="rug_panda_controllers::ExampleWorkspaceController" base_class_type="controller_interface::ControllerBase">
+        <description>
+            An example controller that takes end effector position commands.
+        </description>
+    </class>
+</library>

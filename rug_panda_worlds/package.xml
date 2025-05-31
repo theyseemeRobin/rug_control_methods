@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rug_panda_worlds</name>
+  <description>Custom worlds for the franka panda robot, along with the launch script for using them</description>
+  <version>0.0.0</version>
+  <author>Robin Moret</author>
+  <author>Dennis Wu</author>
+  <maintainer email="r.l.moret@student.rug.nl">tsmr</maintainer>
+  <maintainer email="d.c.y.wu@student.rug.nl">tsmr</maintainer>
+  <license>null</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>gazebo_dev</build_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <depend>gazebo_ros_control</depend>
+  <depend>roscpp</depend>
+  <depend>boost_sml</depend>
+  <depend>urdf</depend>
+  <depend>franka_gazebo</depend>
+  <depend>plotjuggler</depend>
+
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>roslaunch</exec_depend>
+
+
+  <export>
+    <!--Export gazebo models and worlds-->
+    <gazebo_ros gazebo_model_path="${prefix}/models"/>
+    <gazebo_ros gazebo_resource_path="${prefix}/world"/>
+  </export>
+</package>

@@ -1,0 +1,5168 @@
+<sdf version='1.7'>
+  <model name='keyboard'>
+    <link name='keyboard_base'>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.8</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name='keyboard_base_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.360466 0.144 0.0189</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='keyboard_base_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.360466 0.144 0.0189</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='0_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.027032 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_0</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_0'>
+      <pose relative_to='0_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_0_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_0_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='1_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.14456 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_1'>
+      <pose relative_to='1_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_1_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_1_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='2_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.125494 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_2'>
+      <pose relative_to='2_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_2_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_2_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='3_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.106428 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_3</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_3'>
+      <pose relative_to='3_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_3_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_3_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='4_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.087363 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_4</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_4'>
+      <pose relative_to='4_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_4_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_4_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='5_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.068297 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_5</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_5'>
+      <pose relative_to='5_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_5_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_5_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='6_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.049231 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_6</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_6'>
+      <pose relative_to='6_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_6_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_6_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='7_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.030166 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_7</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_7'>
+      <pose relative_to='7_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_7_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_7_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='8_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.0111 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_8</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_8'>
+      <pose relative_to='8_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_8_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_8_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='9_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.007966 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_9</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_9'>
+      <pose relative_to='9_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_9_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_9_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.046097 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_'>
+      <pose relative_to='_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key__collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key__visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='a_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.131247 -0.012435 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_a</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_a'>
+      <pose relative_to='a_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_a_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_a_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='b1_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.126565 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_b1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_b1'>
+      <pose relative_to='b1_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_b1_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_b1_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='b2_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.145699 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_b2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_b2'>
+      <pose relative_to='b2_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_b2_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_b2_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='b3_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.164833 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_b3</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_b3'>
+      <pose relative_to='b3_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_b3_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_b3_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='b_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.044401 -0.031406 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_b</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_b'>
+      <pose relative_to='b_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_b_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_b_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='backslash_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.099127 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_backslash</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_backslash'>
+      <pose relative_to='backslash_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_backslash_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.026874 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_backslash_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.026874 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='backspace_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.093807 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_backspace</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_backspace'>
+      <pose relative_to='backspace_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_backspace_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.038202 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_backspace_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.038202 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='c_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.083401 -0.031406 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_c</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_c'>
+      <pose relative_to='c_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_c_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_c_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='caps_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.156984 -0.012435 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_caps</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_caps'>
+      <pose relative_to='caps_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_caps_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.031374 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_caps_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.031374 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='close_square_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.075824 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_close_square</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_close_square'>
+      <pose relative_to='close_square_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_close_square_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_close_square_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='comma_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.0141 -0.031406 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_comma</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_comma'>
+      <pose relative_to='comma_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_comma_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_comma_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='d_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.092576 -0.012435 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_d</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_d'>
+      <pose relative_to='d_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_d_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_d_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='down_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.145524 -0.050543 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_down</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_down'>
+      <pose relative_to='down_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_down_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_down_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='e_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.097287 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_e</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_e'>
+      <pose relative_to='e_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_e_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_e_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='enter_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.092399 -0.012435 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_enter</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_enter'>
+      <pose relative_to='enter_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_enter_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.040374 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_enter_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.040374 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='esc_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.16363 0.050346 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_esc</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_esc'>
+      <pose relative_to='esc_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_esc_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_esc_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='f10_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.065436 0.050346 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_f10</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_f10'>
+      <pose relative_to='f10_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_f10_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_f10_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='f11_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.084512 0.050346 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_f11</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_f11'>
+      <pose relative_to='f11_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_f11_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_f11_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='f12_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.103588 0.050346 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_f12</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_f12'>
+      <pose relative_to='f12_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_f12_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_f12_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='f1_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.12543 0.050346 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_f1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_f1'>
+      <pose relative_to='f1_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_f1_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_f1_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='f2_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.106351 0.050346 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_f2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_f2'>
+      <pose relative_to='f2_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_f2_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_f2_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='f3_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.087276 0.050346 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_f3</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_f3'>
+      <pose relative_to='f3_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_f3_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_f3_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='f4_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.0682 0.050346 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_f4</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_f4'>
+      <pose relative_to='f4_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_f4_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_f4_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='f5_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.040002 0.050346 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_f5</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_f5'>
+      <pose relative_to='f5_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_f5_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_f5_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='f6_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.020926 0.050346 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_f6</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_f6'>
+      <pose relative_to='f6_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_f6_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_f6_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='f7_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.00185 0.050346 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_f7</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_f7'>
+      <pose relative_to='f7_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_f7_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_f7_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='f8_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.017225 0.050346 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_f8</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_f8'>
+      <pose relative_to='f8_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_f8_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_f8_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='f9_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.04636 0.050346 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_f9</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_f9'>
+      <pose relative_to='f9_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_f9_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_f9_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='f_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.073241 -0.012435 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_f</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_f'>
+      <pose relative_to='f_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_f_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_f_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='fn_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.07709 -0.050543 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_fn</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_fn'>
+      <pose relative_to='fn_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_fn_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.022437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_fn_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.022437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='forward_slash_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.053099 -0.031406 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_forward_slash</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_forward_slash'>
+      <pose relative_to='forward_slash_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_forward_slash_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_forward_slash_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='g_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.053905 -0.012435 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_g</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_g'>
+      <pose relative_to='g_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_g_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_g_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='h_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.03457 -0.012435 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_h</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_h'>
+      <pose relative_to='h_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_h_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_h_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='i_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.001114 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_i</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_i'>
+      <pose relative_to='i_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_i_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_i_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='j_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.015235 -0.012435 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_j</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_j'>
+      <pose relative_to='j_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_j_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_j_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='k_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.004101 -0.012435 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_k</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_k'>
+      <pose relative_to='k_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_k_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_k_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_alt_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.114389 -0.050543 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_l_alt</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_l_alt'>
+      <pose relative_to='l_alt_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_l_alt_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.022437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_l_alt_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.022437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_ctrl_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.161389 -0.050543 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_l_ctrl</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_l_ctrl'>
+      <pose relative_to='l_ctrl_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_l_ctrl_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.022437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_l_ctrl_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.022437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.023436 -0.012435 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_l</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_l'>
+      <pose relative_to='l_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_l_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_l_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='l_shift_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.15242 -0.031406 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_l_shift</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_l_shift'>
+      <pose relative_to='l_shift_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_l_shift_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.040437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_l_shift_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.040437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='left_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.126524 -0.050543 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_left</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_left'>
+      <pose relative_to='left_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_left_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_left_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='m1_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.12648 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_m1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_m1'>
+      <pose relative_to='m1_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_m1_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_m1_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='m2_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.145546 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_m2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_m2'>
+      <pose relative_to='m2_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_m2_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_m2_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='m3_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.164612 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_m3</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_m3'>
+      <pose relative_to='m3_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_m3_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_m3_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='m_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.005401 -0.031406 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_m</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_m'>
+      <pose relative_to='m_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_m_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_m_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='n_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.024901 -0.031406 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_n</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_n'>
+      <pose relative_to='n_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_n_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_n_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='o_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.01812 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_o</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_o'>
+      <pose relative_to='o_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_o_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_o_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='open_square_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.05659 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_open_square</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_open_square'>
+      <pose relative_to='open_square_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_open_square_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_open_square_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='p_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.037355 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_p</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_p'>
+      <pose relative_to='p_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_p_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_p_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='period_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.033599 -0.031406 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_period</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_period'>
+      <pose relative_to='period_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_period_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_period_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='plus_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.065163 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_plus</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_plus'>
+      <pose relative_to='plus_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_plus_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_plus_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='q_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.135757 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_q</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_q'>
+      <pose relative_to='q_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_q_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_q_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='quote_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.062107 -0.012435 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_quote</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_quote'>
+      <pose relative_to='quote_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_quote_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_quote_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_alt_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.03009 -0.050543 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_r_alt</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_r_alt'>
+      <pose relative_to='r_alt_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_r_alt_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.022437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_r_alt_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.022437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_ctrl_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.10059 -0.050543 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_r_ctrl</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_r_ctrl'>
+      <pose relative_to='r_ctrl_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_r_ctrl_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.022437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_r_ctrl_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.022437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.078053 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_r</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_r'>
+      <pose relative_to='r_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_r_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_r_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_shift_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.087932 -0.031406 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_r_shift</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_r_shift'>
+      <pose relative_to='r_shift_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_r_shift_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.049437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_r_shift_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.049437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='r_win_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.05359 -0.050543 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_r_win</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_r_win'>
+      <pose relative_to='r_win_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_r_win_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.022437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_r_win_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.022437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='right_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.164524 -0.050543 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_right</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_right'>
+      <pose relative_to='right_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_right_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_right_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='s_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.111911 -0.012435 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_s</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_s'>
+      <pose relative_to='s_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_s_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_s_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='semi_colon_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.042771 -0.012435 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_semi_colon</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_semi_colon'>
+      <pose relative_to='semi_colon_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_semi_colon_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_semi_colon_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='space_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.042187 -0.050543 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_space</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_space'>
+      <pose relative_to='space_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_space_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.11986 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_space_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.11986 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='t1_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.126534 0.050346 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_t1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_t1'>
+      <pose relative_to='t1_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_t1_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_t1_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='t2_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.14572 0.050346 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_t2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_t2'>
+      <pose relative_to='t2_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_t2_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_t2_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='t3_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.164907 0.050346 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_t3</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_t3'>
+      <pose relative_to='t3_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_t3_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_t3_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='t_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.058818 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_t</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_t'>
+      <pose relative_to='t_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_t_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_t_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='tab_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.15915 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_tab</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_tab'>
+      <pose relative_to='tab_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_tab_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.026874 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_tab_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.026874 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='tilde_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.163625 0.025455 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_tilde</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_tilde'>
+      <pose relative_to='tilde_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_tilde_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_tilde_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='u_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.020349 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_u</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_u'>
+      <pose relative_to='u_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_u_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_u_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='up_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>0.145684 -0.0315 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_up</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_up'>
+      <pose relative_to='up_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_up_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_up_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='v_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.063901 -0.031406 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_v</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_v'>
+      <pose relative_to='v_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_v_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_v_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='w_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.116522 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_w</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_w'>
+      <pose relative_to='w_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_w_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_w_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='win_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.137889 -0.050543 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_win</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_win'>
+      <pose relative_to='win_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_win_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.022437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_win_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.022437 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='x_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.102901 -0.031406 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_x</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_x'>
+      <pose relative_to='x_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_x_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_x_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='y_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.039583 0.006528 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_y</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_y'>
+      <pose relative_to='y_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_y_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_y_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='z_joint' type='prismatic'>
+      <pose relative_to='keyboard_base'>-0.1224 -0.031406 0.018 0 -0 0</pose>
+      <parent>keyboard_base</parent>
+      <child>key_z</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.004</lower>
+          <upper>0</upper>
+          <effort>1</effort>
+          <velocity>0.001</velocity>
+        </limit>
+        <dynamics>
+          <damping>1</damping>
+          <friction>0</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>60</spring_stiffness>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+        </ode>
+      </physics>
+    </joint>
+    <link name='key_z'>
+      <pose relative_to='z_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0001</iyy>
+          <iyz>0</iyz>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <collision name='key_z_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='key_z_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.018 0.018 0.012</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
+[1;36m[0m[1;32m[0m
