@@ -11,7 +11,7 @@
 #include <ros/node_handle.h>
 #include <ros/time.h>
 #include <Eigen/Dense>
-#include <trajectory_msgs/JointTrajectoryPoint.h>
+#include <geometry_msgs/PoseStamped.h>
 
 #include <franka_hw/franka_model_interface.h>
 #include <franka_hw/franka_state_interface.h>
@@ -28,9 +28,9 @@ class ExampleWorkspaceController : public controller_interface::MultiInterfaceCo
 {
 
 	// handles
-	std::unique_ptr<franka_hw::FrankaStateHandle> state_handle_;
-	std::unique_ptr<franka_hw::FrankaModelHandle> model_handle_;
-	std::vector<hardware_interface::JointHandle> joint_handles_;
+	std::unique_ptr<franka_hw::FrankaStateHandle> state_handle;
+	std::unique_ptr<franka_hw::FrankaModelHandle> model_handle;
+	std::vector<hardware_interface::JointHandle> joint_handles;
 
 	// target
 	ros::Subscriber sub_target;
@@ -44,7 +44,7 @@ class ExampleWorkspaceController : public controller_interface::MultiInterfaceCo
 		void update(const ros::Time&, const ros::Duration& period) override;
 
 	private:
-		void targetCallback(const trajectory_msgs::JointTrajectoryPointConstPtr& msg);
+		void targetCallback(const geometry_msgs::PoseStampedConstPtr& msg);
 
 };
 }    // namespace rug_panda_controllers

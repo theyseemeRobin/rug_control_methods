@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<launch>
+
+    <node name="sinusoidal_trajectory_planner" pkg="rug_panda_planners" type="sinusoidal_trajectory.py" required="true" output="screen">
+        <param name="link_name" value="panda_link0" />
+    </node>
+
+    <include file="$(find panda_moveit_config)/launch/move_group.launch">
+        <arg name="moveit_controller_manager" value="fake"/>
+        <arg name="info" value="true"/>
+        <arg name="debug" value="false"/>
+    </include>
+
+</launch>

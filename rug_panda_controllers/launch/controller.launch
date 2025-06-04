@@ -1,15 +1,13 @@
 <?xml version="1.0"?>
 <launch>
-    <arg name="controller"  default="$(arg controller)" doc="Which example controller should be started?" />
-    <arg name="arm_id"      default="$(arg arm_id)" doc="Name of the robot to spawn" />
+    <arg name="controller"  default="example_jointspace_controller" doc="Which example controller should be started?" />
     <rosparam file="$(find rug_panda_controllers)/config/rug_panda_controllers.yaml" subst_value="true"/>
 
     <node pkg="controller_manager"
         type="spawner"
         output="screen"
-        name="$(arg arm_id)_controller_spawner"
+        name="panda_controller_spawner"
         respawn="false"
         args="--wait-for initialized franka_state_controller $(arg controller)"
     />
-
 </launch>

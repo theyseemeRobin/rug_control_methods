@@ -8,7 +8,7 @@ bool ExampleJointspaceController::init(hardware_interface::RobotHW* robot_hw, ro
 {
 
         sub_target = node_handle.subscribe(
-                        "/rug_panda_controllers/target",
+                        "/rug_panda/joint_target",
                         20,
                         &ExampleJointspaceController::targetCallback,
                         this,
@@ -36,7 +36,7 @@ bool ExampleJointspaceController::init(hardware_interface::RobotHW* robot_hw, ro
                 return false;
         }
         try {
-                model_handle_ = std::make_unique<franka_hw::FrankaModelHandle>(
+                model_handle = std::make_unique<franka_hw::FrankaModelHandle>(
                                 model_interface->getHandle(arm_id + "_model"));
         } catch (hardware_interface::HardwareInterfaceException& ex) {
                 ROS_ERROR_STREAM(
@@ -52,7 +52,7 @@ bool ExampleJointspaceController::init(hardware_interface::RobotHW* robot_hw, ro
         return false;
     }
     try {
-        state_handle_ = std::make_unique<franka_hw::FrankaStateHandle>(
+        state_handle = std::make_unique<franka_hw::FrankaStateHandle>(
                 state_interface->getHandle(arm_id + "_robot"));
     } catch (hardware_interface::HardwareInterfaceException& ex) {
         ROS_ERROR_STREAM(
@@ -69,7 +69,7 @@ bool ExampleJointspaceController::init(hardware_interface::RobotHW* robot_hw, ro
     }
     for (size_t i = 0; i < 7; ++i) {
         try {
-            joint_handles_.push_back(effort_joint_interface->getHandle(joint_names[i]));
+            joint_handles.push_back(effort_joint_interface->getHandle(joint_names[i]));
         } catch (const hardware_interface::HardwareInterfaceException& ex) {
             ROS_ERROR_STREAM(
                     "ExampleJointspaceController: Exception getting joint handles: " << ex.what());

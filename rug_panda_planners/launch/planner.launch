@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<launch>
+
+    <arg name="planner" default="interactive" doc="Which planner to launch? Options: interactive, sinusoidal_trajectory"/>
+    <include file="$(find rug_panda_planners)/launch/$(arg planner).launch"/>
+</launch>

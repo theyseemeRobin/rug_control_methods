@@ -28,9 +28,9 @@ class ExampleJointspaceController : public controller_interface::MultiInterfaceC
 {
 
 	// handles
-	std::unique_ptr<franka_hw::FrankaStateHandle> state_handle_;
-	std::unique_ptr<franka_hw::FrankaModelHandle> model_handle_;
-	std::vector<hardware_interface::JointHandle> joint_handles_;
+	std::unique_ptr<franka_hw::FrankaStateHandle> state_handle;
+	std::unique_ptr<franka_hw::FrankaModelHandle> model_handle;
+	std::vector<hardware_interface::JointHandle> joint_handles;
 
 	// target
 	ros::Subscriber sub_target;
@@ -38,7 +38,7 @@ class ExampleJointspaceController : public controller_interface::MultiInterfaceC
 	Vector7d target_joint_angles;
 	Vector7d initial_joint_angles;
 
-	ros::Duration elapsed_time_;
+	ros::Duration elapsed_time;
 
 	public:
 		bool init(hardware_interface::RobotHW* robot_hw, ros::NodeHandle& node_handle) override;

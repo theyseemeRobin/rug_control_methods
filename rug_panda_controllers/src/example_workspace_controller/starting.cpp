@@ -4,7 +4,7 @@ namespace rug_panda_controllers
 {
 
 void ExampleWorkspaceController::starting(const ros::Time& /*time*/) {
-    franka::RobotState initial_state = state_handle_->getRobotState();
+    franka::RobotState initial_state = state_handle->getRobotState();
     Eigen::Affine3d initial_transform(Eigen::Matrix4d::Map(initial_state.O_T_EE.data()));
 
     target_pose = initial_transform.translation();

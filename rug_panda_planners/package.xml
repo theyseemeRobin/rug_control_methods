@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rug_panda_planners</name>
+  <description>Package for sending target poses to the robot to produce certain behavior</description>
+  <version>0.0.0</version>
+  <author>Robin Moret</author>
+  <maintainer email="r.l.moret@student.rug.nl">tsmr</maintainer>
+  <license>null</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>moveit</depend>
+  <depend>rospy</depend>
+  <export>
+
+  </export>
+</package>
