@@ -91,7 +91,7 @@ class ControllerInterface:
                     pose_stamped,
                 )
             except Exception as e:
-                rospy.logwarn(f"Inverse Kinematics failed: {e}, not sending joint space command.")
+                rospy.logwarn("Inverse Kinematics failed: {}, not sending joint space command.".format(e))
                 return
             self.joint_command(joint_trajectory_point, send_workspace=False)
 

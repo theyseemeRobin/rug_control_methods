@@ -19,7 +19,7 @@ def joint_trajectory_point_to_joint_state(joint_trajectory_point):
     joint_state.velocity = joint_trajectory_point.velocities
     joint_state.effort = joint_trajectory_point.effort
     joint_state.header.frame_id = 'panda_link0'
-    joint_state.name = [f'panda_joint{i}' for i in range(1, 8)]
+    joint_state.name = ['panda_joint' + str(i) for i in range(1, 8)]
     return joint_state
 
 

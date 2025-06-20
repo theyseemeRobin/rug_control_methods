@@ -8,6 +8,7 @@
   <license>null</license>
 
   <buildtool_depend>catkin</buildtool_depend>
+  <depend>moveit_commander</depend>
   <depend>moveit</depend>
   <depend>rospy</depend>
   <export>

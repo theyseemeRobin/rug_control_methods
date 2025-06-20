@@ -66,14 +66,14 @@ class InverseKinematics(object):
         joint_state = JointState()
         joint_state.position= seed_joint_values
         joint_state.header.frame_id = frame_id
-        joint_state.name = [f'panda_joint{i}' for i in range(1, 8)]
+        joint_state.name = ['panda_joint' + str(i) for i in range(1, 8)]
         req.ik_request.robot_state.joint_state = joint_state
 
         try:
             resp = self.ik_srv(req)
             ik_solution = joint_state_to_joint_trajectory_point(resp.solution.joint_state)
             if resp.error_code.val != resp.error_code.SUCCESS:
-                raise RuntimeError(f"MoveIt inverse kinematics failed with error code {resp.error_code.val}")
+                raise RuntimeError("MoveIt inverse kinematics failed with error code ", resp.error_code.val)
             return ik_solution
         except rospy.ServiceException as e:
             rospy.logerr("MoveIt inverse kinematics service exception: " + str(e))

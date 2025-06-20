@@ -9,10 +9,19 @@ package.
 ## Installation
 The following instructions assume ROS Melodic is installed on your system, but may also work with other versions of 
 ROS 1. If you have not done so already, please follow the [ROS installation instructions](https://wiki.ros.org/melodic/Installation/Ubuntu)
-to install ROS on your system.
+to install ROS on your system. Following that, install libfranka and franka_ros as instructed [here](https://frankarobotics.github.io/docs/installation_linux.html) (try [this link](https://frankaemika.github.io/docs/installation_linux.html) if the other one doesn't work)
 
+
+Following that, install the package and dependencies. Ensure you are in the root of the catkin workspace you will be working in:
 ```bash
-rest of instructions
+
+# install panda_moveit_config and moveit_commander
+sudo apt install ros-melodic-panda-moveit-config
+sudo apt install ros-melodic-moveit-commander
+
+# clone and install the package
+git clone https://github.com/theyseemerobin/rug_control_methods.git src
+catkin_make
 ```
 
 ## Usage

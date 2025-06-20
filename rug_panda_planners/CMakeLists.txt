@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(catkin REQUIRED COMPONENTS
   rospy
+  moveit_commander
 )
 catkin_python_setup()
 

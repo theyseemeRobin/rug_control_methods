@@ -7,7 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Load catkin and all dependencies required for this package
 find_package(catkin REQUIRED COMPONENTS
-  plotjuggler
   gazebo_dev
   roscpp
   gazebo_ros_control
@@ -20,7 +19,6 @@ list_insert_in_workspace_order(catkin_INCLUDE_DIRS ${Franka_INCLUDE_DIRS} ${catk
 
 catkin_package(
   CATKIN_DEPENDS
-  plotjuggler
   roscpp
   gazebo_ros_control
   boost_sml

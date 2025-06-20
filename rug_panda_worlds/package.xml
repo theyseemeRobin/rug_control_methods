@@ -16,7 +16,6 @@
   <depend>boost_sml</depend>
   <depend>urdf</depend>
   <depend>franka_gazebo</depend>
-  <depend>plotjuggler</depend>
 
   <exec_depend>rospy</exec_depend>
   <exec_depend>roslaunch</exec_depend>
